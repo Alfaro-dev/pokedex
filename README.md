@@ -1,16 +1,36 @@
-# pokedex
+# Pokédex 📱
 
-A new Flutter project.
+Pokédex en **Flutter** que consume la [PokéAPI](https://pokeapi.co/) para listar los 151 Pokémon de la primera generación y ver el detalle de cada uno.
 
-## Getting Started
+## ✨ Funciones
 
-This project is a starting point for a Flutter application.
+- Lista de los primeros 151 Pokémon
+- Consulta del detalle de cada Pokémon
+- Consumo de API REST con `http`
 
-A few resources to get you started if this is your first Flutter project:
+## 🛠️ Stack
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Flutter / Dart**
+- **http** para las peticiones a la PokéAPI
+- Organización por capas: `models`, `services` y `views`
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📁 Estructura
+
+```
+lib/
+├── models/     # pokemon.dart, pokemon_details.dart
+├── services/   # pokedex_service.dart (llamadas a la PokéAPI)
+├── views/      # pokedex_screen.dart
+└── main.dart
+```
+
+## 🚀 Cómo correrlo
+
+```bash
+flutter pub get
+flutter run
+```
+
+---
+
+Desarrollado por [Carlos Alfaro](https://carlosalfaro.dev).
